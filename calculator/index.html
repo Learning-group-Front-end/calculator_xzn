@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link type="text/css" rel="stylesheet"  href="css/base.css"/>
+		
+	</head>
+	<body>
+		<div id="container">
+			<div class="showDiv">
+				<input type="text" class="showScreen" disabled="disabled" value="0" id="showScreen"/>
+			</div>
+			<div class="operatorDiv">
+				<table class="operatorTable">
+					<tr>
+						<td><button onclick="savememory()">mc</button></td>
+						<td><button onclick="memoryadd()">m+</button></td>
+						<td><button onclick="memorysub()">m-</button></td>
+						<td><button onclick="memoryreset()">mr</button></td>
+					</tr>
+					<tr>
+						<td><button onclick="AC()">AC</button></td>
+						<td><button onclick="back()">&lt;</button></td>
+						<td><button>+/-</button></td>
+						<td><button onclick="clickFuhao('/')">÷</button></td>
+					</tr>
+					<tr>
+						<td><button onclick="clickShuzi('7')">7</button></td>
+						<td><button onclick="clickShuzi('8')">8</button></td>
+						<td><button onclick="clickShuzi('9')">9</button></td>
+						<td><button onclick="clickFuhao('×')">×</button></td>
+					</tr>
+					<tr>
+						<td><button onclick="clickShuzi('4')">4</button></td>
+						<td><button onclick="clickShuzi('5')">5</button></td>
+						<td><button onclick="clickShuzi('6')">6</button></td>
+						<td><button onclick="clickFuhao('-')">-</button></td>
+					</tr>
+					<tr>
+						<td><button onclick="clickShuzi('1')">1</button></td>
+						<td><button onclick="clickShuzi('2')">2</button></td>
+						<td><button onclick="clickShuzi('3')">3</button></td>
+						<td><button onclick="clickFuhao('+')">+</button></td>
+					</tr>
+					<tr>
+						<td colspan="2"><button onclick="clickzero()">0</button></td>
+						<td><button onclick="clickpoint()">.</button></td>
+						<td><button class="bg_color" onclick="equal()">=</button></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		
+	</body>
+	<script type="text/javascript" src="js/calu.js"></script>
+</html>
